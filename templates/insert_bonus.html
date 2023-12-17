@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Bonus Table</h1>
+        <table border="5px" cellpadding = '5px'>
+            <tr>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>Sal</th>
+                <th>Comm</th>
+            </tr>
+        {% for bo in bonuss %}
+            <tr>
+                <td>{{bo.ename}}</td>
+                <td>{{bo.job}}</td>
+                <td>{{bo.sal}}</td>
+                <td>{{bo.comm}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
